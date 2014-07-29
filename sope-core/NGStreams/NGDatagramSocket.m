@@ -33,6 +33,8 @@
 #include "NGSocket+private.h"
 #include "common.h"
 
+#include "asm/poll.h"
+
 #if !defined(POLLRDNORM)
 #  define POLLRDNORM POLLIN
 #endif

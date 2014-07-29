@@ -21,6 +21,7 @@
 
 #include <netinet/in.h>
 #include <netinet/tcp.h>
+#include <asm/poll.h>
 
 #include "config.h"
 
