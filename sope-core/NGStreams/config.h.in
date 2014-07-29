@@ -1,253 +1,221 @@
-#ifndef __config_h__
-#define __config_h__
+/* config.h.in.  Generated from configure.in by autoheader.  */
 
-/* Define if system calls automatically restart after interruption
-   by a signal.  */
-#undef HAVE_RESTARTABLE_SYSCALLS
-
-/* Define if you have the gethostbyname_r function. */
-#undef HAVE_GETHOSTBYNAME_R
-
-/* Define if you have the gethostbyaddr_r function. */
-#undef HAVE_GETHOSTBYADDR_R
-
-/* Define if you have the gethostent_r function. */
-#undef HAVE_GETHOSTENT_R
-
-/* Define if you have posix mmap function.  */
-#undef HAVE_MMAP
-
-/* Define if you have the getcwd function */
-#undef HAVE_GETCWD
-
-/* Define if you have the getuid function */
-#undef HAVE_GETUID
-
-/* Define if you have the getpwnam function */
-#undef HAVE_GETPWNAM
-
-/* Define if you have the getpwuid function */
-#undef HAVE_GETPWUID
-
-/* Define if you have the kill function */
-#undef HAVE_KILL
-
-/* Define if you have the statvfs function */
-#undef HAVE_STATVFS
-
-/* Define if you have the poll function */
-#undef HAVE_POLL
-
-/* Define if you have the chown function */
-#undef HAVE_CHOWN
-
-/* Define if you have the symlink function */
-#undef HAVE_SYMLINK
-
-/* Define if you have the readlink function */
-#undef HAVE_READLINK
-
-/* Define if you have the fsync function */
-#undef HAVE_FSYNC
-
-/* Define if you have the opendir family of functions */
-#undef HAVE_OPENDIR
-
-/* Define if you have the isatty function */
-#undef HAVE_ISATTY
-
-/* Define if you have the ttyname function */
-#undef HAVE_TTYNAME
-
-/* Define if you have the ttyname_r function */
-#undef HAVE_TTYNAME_R
-
-/* Define if you have the <string.h> header file.  */
-#undef HAVE_STRING_H
-
-/* Define if you have the <strings.h> header file.  */
-#undef HAVE_STRINGS_H
-
-/* Define if you have the <memory.h> header file */
-#undef HAVE_MEMORY_H
-
-/* Define if you have the <stdlib.h> header file.  */
-#undef HAVE_STDLIB_H
-
-/* Define if you have the <limits.h> header file.  */
-#undef HAVE_LIMITS_H
-
-/* Define if you have the <libc.h> header file.  */
-#undef HAVE_LIBC_H
-
-/* Define if you have the <sys/stat.h> header file */
-#undef HAVE_SYS_STAT_H
-
-/* Define if you have the <sys/fcntl.h> header file */
-#undef HAVE_SYS_FCNTL_H
-
-/* Define if you have the <fcntl.h> header file */
-#undef HAVE_FCNTL_H
-
-/* Define if you have the <sys/vfs.h> header file */
-#undef HAVE_SYS_VFS_H
-
-/* Define if you have the <sys/statfs.h> header file */
-#undef HAVE_SYS_STATFS_H
-
-/* Define if you have the <sys/statvfs.h> header file */
-#undef HAVE_SYS_STATVFS_H
-
-/* Define if you have the <poll.h> header file */
-#undef HAVE_POLL_H
-
-/* Define if you have the <sys/poll.h> header file */
-#undef HAVE_SYS_POLL_H
-
-/* Define if you have the <sys/socket.h> header file */
-#undef HAVE_SYS_SOCKET_H
-
-/* Define if you have the <unistd.h> header file */
-#undef HAVE_UNISTD_H
-
-/* Define if you have the <sys/ioctl.h> header file */
-#undef HAVE_SYS_IOCTL_H
-
-/* Define if you have the <sys/filio.h> header file */
-#undef HAVE_SYS_FILIO_H
-
-/* Define if you have the <netinet/in.h> header file */
-#undef HAVE_NETINET_IN_H
-
-/* Define if you have the <netdb.h> header file */
-#undef HAVE_NETDB_H
-
-/* Define if you have the <windows.h> header file */
-#undef HAVE_WINDOWS_H
-
-/* Define if you have the <winsock.h> header file */
-#undef HAVE_WINSOCK_H
-
-/* Define if you have the <Windows32/Sockets.h> header file */
-#undef HAVE_WINDOWS32_SOCKETS_H
-
-/* Define if you have the <pwd.h> header file */
-#undef HAVE_PWD_H
-
-/* Define if you have the <process.h> header file */
-#undef HAVE_PROCESS_H
-
-/* Define if you have the <grp.h> header file */
-#undef HAVE_GRP_H
-
-/* Define if you have the <sys/file.h> header file */
-#undef HAVE_SYS_FILE_H
-
-/* Define if you have the <sys/select.h> header file */
-#undef HAVE_SYS_SELECT_H
-
-/* Define if you have the <time.h> header file */
-#undef HAVE_TIME_H
-
-/* Define if you have the <sys/time.h> header file */
-#undef HAVE_SYS_TIME_H
-
-/* Define if you have the <sys/types.h> header file */
-#undef HAVE_SYS_TYPES_H
-
-/* Define if you have the <utime.h> header file */
-#undef HAVE_UTIME_H
-
-/* Define if you have the <sys/errno.h> header file */
-#undef HAVE_SYS_ERRNO_H
-
-/* Define if sys/wait.h is POSIX compatible */
-#undef HAVE_SYS_WAIT_H
-
-/* Define this if you have the <vfork.h> header file */
-#undef HAVE_VFORK_H
-
-/* Define for vfork in case it's not defined */
-#undef vfork
-
-/* Define for pid_t in case it's not defined */
-#undef pid_t
-
-/* The following macros deal with directory entries. */
+/* Define to 1 if you have the <dirent.h> header file, and it defines `DIR'.
+   */
 #undef HAVE_DIRENT_H
-#undef HAVE_SYS_NDIR_H
-#undef HAVE_SYS_DIR_H
-#undef HAVE_NDIR_H
+
+/* Define to 1 if you have the <dir.h> header file. */
 #undef HAVE_DIR_H
 
-/* The structure alignment as determined by configure */
-#define STRUCT_ALIGNMENT @STRUCT_ALIGNMENT@
+/* Define to 1 if you have the <fcntl.h> header file. */
+#undef HAVE_FCNTL_H
 
-/* The name of the target platform, obtained by configure */
-#define TARGET_PLATFORM		"@host@"
+/* Define to 1 if you have the `fork' function. */
+#undef HAVE_FORK
 
-/* define POLL constants */
+/* Define to 1 if you have the `getcwd' function. */
+#undef HAVE_GETCWD
 
-#if HAVE_POLL_H
-#  include <poll.h>
-#endif
-#if HAVE_SYS_POLL_H
-#  include <sys/poll.h>
-#endif
+/* Define to 1 if you have the `gethostbyaddr_r' function. */
+#undef HAVE_GETHOSTBYADDR_R
 
-#ifndef POLLIN
-# ifdef HAVE_POLL
-#  warning "manually declared POLLIN=1 .."
-# endif
-#  define POLLIN     1
-#endif
-#ifndef POLLOUT
-# ifdef HAVE_POLL
-#  warning "manually declared POLLOUT=2 .."
-# endif
-#  define POLLOUT    2
-#endif
-#ifndef POLLERR
-# ifdef HAVE_POLL
-#  warning "manually declared POLLERR=4 .."
-# endif
-#  define POLLERR    4
-#endif
+/* Define to 1 if you have the `gethostbyname_r' function. */
+#undef HAVE_GETHOSTBYNAME_R
 
-#ifndef POLLRDNORM
-#  ifdef linux
-#    define POLLRDNORM POLLIN
-#  else /* !linux */
-#    ifdef POLLIN
-#     ifdef HAVE_POLL
-#      warning "manually declared POLLRDNORM=POLLIN .."
-#     endif
-#      define POLLRDNORM POLLIN
-#    else
-#     ifdef HAVE_POLL
-#      warning "manually declared POLLRDNORM .."
-#     endif
-#      define POLLRDNORM 1
-#    endif
-#  endif /* !linux */
-#endif
+/* Define to 1 if you have the `gethostent_r' function. */
+#undef HAVE_GETHOSTENT_R
 
-#ifndef POLLWRNORM
-#  ifdef linux
-#    define POLLWRNORM POLLOUT
-#  else /* !linux */
-#    ifdef POLLOUT
-#     ifdef HAVE_POLL
-#      warning "manually declared POLLWRNORM=POLLOUT .."
-#     endif
-#      define POLLWRNORM POLLOUT
-#    else
-#     ifdef HAVE_POLL
-#      warning "manually declared POLLWRNORM .."
-#     endif
-#      define POLLWRNORM 2
-#    endif
-#  endif /* !linux */
-#endif
+/* Define to 1 if you have the `getpagesize' function. */
+#undef HAVE_GETPAGESIZE
 
-#endif /* __config_h__ */
+/* Define to 1 if you have the <grp.h> header file. */
+#undef HAVE_GRP_H
+
+/* Define to 1 if you have the <inttypes.h> header file. */
+#undef HAVE_INTTYPES_H
+
+/* Define to 1 if you have the `isatty' function. */
+#undef HAVE_ISATTY
+
+/* Define to 1 if you have the `kill' function. */
+#undef HAVE_KILL
+
+/* Define to 1 if you have the `advapi32' library (-ladvapi32). */
+#undef HAVE_LIBADVAPI32
+
+/* Define to 1 if you have the <libc.h> header file. */
+#undef HAVE_LIBC_H
+
+/* Define to 1 if you have the `nsl' library (-lnsl). */
+#undef HAVE_LIBNSL
+
+/* Define to 1 if you have the `socket' library (-lsocket). */
+#undef HAVE_LIBSOCKET
+
+/* Define to 1 if you have the `wsock32' library (-lwsock32). */
+#undef HAVE_LIBWSOCK32
+
+/* Define to 1 if you have the <limits.h> header file. */
+#undef HAVE_LIMITS_H
+
+/* Define to 1 if you have the `memcpy' function. */
+#undef HAVE_MEMCPY
+
+/* Define to 1 if you have the <memory.h> header file. */
+#undef HAVE_MEMORY_H
+
+/* Define to 1 if you have a working `mmap' system call. */
+#undef HAVE_MMAP
+
+/* Define to 1 if you have the <ndir.h> header file, and it defines `DIR'. */
+#undef HAVE_NDIR_H
+
+/* Define to 1 if you have the <netdb.h> header file. */
+#undef HAVE_NETDB_H
+
+/* Define to 1 if you have the <netinet/in.h> header file. */
+#undef HAVE_NETINET_IN_H
+
+/* Define to 1 if you have the `poll' function. */
+#undef HAVE_POLL
+
+/* Define to 1 if you have the <poll.h> header file. */
+#undef HAVE_POLL_H
+
+/* Define to 1 if you have the <process.h> header file. */
+#undef HAVE_PROCESS_H
+
+/* Define to 1 if you have the <pwd.h> header file. */
+#undef HAVE_PWD_H
+
+/* Define to 1 if system calls automatically restart after interruption by a
+   signal. */
+#undef HAVE_RESTARTABLE_SYSCALLS
+
+/* Define to 1 if you have the <stdint.h> header file. */
+#undef HAVE_STDINT_H
+
+/* Define to 1 if you have the <stdlib.h> header file. */
+#undef HAVE_STDLIB_H
+
+/* Define to 1 if you have the <strings.h> header file. */
+#undef HAVE_STRINGS_H
+
+/* Define to 1 if you have the <string.h> header file. */
+#undef HAVE_STRING_H
+
+/* Define to 1 if you have the <sys/dir.h> header file, and it defines `DIR'.
+   */
+#undef HAVE_SYS_DIR_H
+
+/* Define to 1 if you have the <sys/errno.h> header file. */
+#undef HAVE_SYS_ERRNO_H
+
+/* Define to 1 if you have the <sys/fcntl.h> header file. */
+#undef HAVE_SYS_FCNTL_H
+
+/* Define to 1 if you have the <sys/file.h> header file. */
+#undef HAVE_SYS_FILE_H
+
+/* Define to 1 if you have the <sys/filio.h> header file. */
+#undef HAVE_SYS_FILIO_H
+
+/* Define to 1 if you have the <sys/ioctl.h> header file. */
+#undef HAVE_SYS_IOCTL_H
+
+/* Define to 1 if you have the <sys/ndir.h> header file, and it defines `DIR'.
+   */
+#undef HAVE_SYS_NDIR_H
+
+/* Define to 1 if you have the <sys/param.h> header file. */
+#undef HAVE_SYS_PARAM_H
+
+/* Define to 1 if you have the <sys/poll.h> header file. */
+#undef HAVE_SYS_POLL_H
+
+/* Define to 1 if you have the <sys/select.h> header file. */
+#undef HAVE_SYS_SELECT_H
+
+/* Define to 1 if you have the <sys/socket.h> header file. */
+#undef HAVE_SYS_SOCKET_H
+
+/* Define to 1 if you have the <sys/statfs.h> header file. */
+#undef HAVE_SYS_STATFS_H
+
+/* Define to 1 if you have the <sys/statvfs.h> header file. */
+#undef HAVE_SYS_STATVFS_H
+
+/* Define to 1 if you have the <sys/stat.h> header file. */
+#undef HAVE_SYS_STAT_H
+
+/* Define to 1 if you have the <sys/time.h> header file. */
+#undef HAVE_SYS_TIME_H
+
+/* Define to 1 if you have the <sys/types.h> header file. */
+#undef HAVE_SYS_TYPES_H
+
+/* Define to 1 if you have the <sys/vfs.h> header file. */
+#undef HAVE_SYS_VFS_H
+
+/* Define to 1 if you have <sys/wait.h> that is POSIX.1 compatible. */
+#undef HAVE_SYS_WAIT_H
+
+/* Define to 1 if you have the <time.h> header file. */
+#undef HAVE_TIME_H
+
+/* Define to 1 if you have the `ttyname' function. */
+#undef HAVE_TTYNAME
+
+/* Define to 1 if you have the `ttyname_r' function. */
+#undef HAVE_TTYNAME_R
+
+/* Define to 1 if you have the <unistd.h> header file. */
+#undef HAVE_UNISTD_H
+
+/* Define to 1 if you have the `vfork' function. */
+#undef HAVE_VFORK
+
+/* Define to 1 if you have the <vfork.h> header file. */
+#undef HAVE_VFORK_H
+
+/* Define to 1 if you have the <Windows32/Sockets.h> header file. */
+#undef HAVE_WINDOWS32_SOCKETS_H
+
+/* Define to 1 if you have the <windows.h> header file. */
+#undef HAVE_WINDOWS_H
+
+/* Define to 1 if you have the <winsock.h> header file. */
+#undef HAVE_WINSOCK_H
+
+/* Define to 1 if `fork' works. */
+#undef HAVE_WORKING_FORK
+
+/* Define to 1 if `vfork' works. */
+#undef HAVE_WORKING_VFORK
+
+/* Define to the address where bug reports for this package should be sent. */
+#undef PACKAGE_BUGREPORT
+
+/* Define to the full name of this package. */
+#undef PACKAGE_NAME
+
+/* Define to the full name and version of this package. */
+#undef PACKAGE_STRING
+
+/* Define to the one symbol short name of this package. */
+#undef PACKAGE_TARNAME
+
+/* Define to the home page for this package. */
+#undef PACKAGE_URL
+
+/* Define to the version of this package. */
+#undef PACKAGE_VERSION
+
+/* Define to 1 if you have the ANSI C header files. */
+#undef STDC_HEADERS
+
+/* Define to `int' if <sys/types.h> does not define. */
+#undef pid_t
+
+/* Define as `fork' if `vfork' does not work. */
+#undef vfork
